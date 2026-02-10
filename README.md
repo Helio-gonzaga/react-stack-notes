@@ -1,0 +1,1 @@
+Um repositório de documentação para dominar a stack React, começando pelos fundamentos de JavaScript.
