@@ -1,9 +1,11 @@
-# 🚀 TUDO que você deve estudar de JavaScript antes do React ou Next.js
+
+# 🚀 Domine JavaScript de Verdade antes de React e Next.js!
 
 ![Banner](./images/cover-note-js-for-react.png)
 
-> 📌 Este documento é um guia completo para quem quer migrar ou se aprofundar na **stack Web moderna**, entendendo **JavaScript de verdade** antes de entrar em React ou Next.js.  
-> Ideal para quem vem do **Android (Kotlin/Java)** ou **iOS (Swift)** e quer entender como a Web realmente funciona.
+
+> 📚 Guia definitivo para dominar JavaScript moderno e entender a Web de verdade antes de mergulhar em React ou Next.js!
+> Perfeito para quem vem do mobile (Android/iOS) ou quer aprender com profundidade e clareza.
 
 ---
 
@@ -15,7 +17,6 @@
 - 🔄 [Babel](#babel)
 - 📦 [Webpack](#webpack)
 - ⚡ [Vite](#vite)
-- 🌳 [Document Object Model (DOM)](#document-object-model-dom)
 - 🧩 [Desestruturação](#desestruturacao)
 - 🧠 [Rest Operator](#rest-operator)
 - 🔁 [Métodos de Array](#metodos-de-array)
@@ -69,6 +70,90 @@ Ele não apenas exibe HTML, mas também:
 🔗 [🎥 Como funciona o navegador (Alura)](https://www.youtube.com/watch?v=kDy62zaCHZE)
 
 ---
+
+## 🌳 Document Object Model
+
+### ❓ O que é o DOM?
+
+**O DOM (Document Object Model) é a representação da página web em forma de árvore.**  
+Cada elemento HTML (div, button, input, etc.) vira um **nó** que pode ser acessado e manipulado pelo JavaScript.
+
+Quando você:
+
+- clica em um botão
+- digita em um input
+- abre um modal
+- atualiza um texto na tela
+
+👉 você está interagindo diretamente com o **DOM**.
+
+---
+
+🎥 Vídeo recomendado
+
+🔗 [🎥 DOM e JavaScript na prática (Rocketseat)](https://www.youtube.com/watch?v=UftSB4DaRU4)
+
+Esse vídeo explica:
+
+o que é DOM
+
+como o JS interage com ele
+
+base para entender frameworks como React
+
+### 🧠 Pensando como dev Mobile (Android / iOS)
+
+Se você vem do mobile, pensa assim:
+
+| Mobile                       | Web                 |
+| ---------------------------- | ------------------- |
+| View / ViewGroup             | DOM                 |
+| ConstraintLayout / StackView | Estrutura em árvore |
+| setText(), setVisibility()   | Manipulação via JS  |
+| Re-render da View            | Atualização do DOM  |
+
+👉 A grande diferença é que na Web o DOM **fica exposto** para o JavaScript.
+
+---
+
+### ⚙️ Como o JavaScript usa o DOM?
+
+O JavaScript pode:
+
+- 🔍 buscar elementos
+- ✏️ alterar texto e estilos
+- ➕ criar novos elementos
+- ❌ remover elementos
+- 🎧 escutar eventos (click, input, submit)
+
+Exemplo simples:
+
+```js
+const button = document.querySelector("button");
+
+button.addEventListener("click", () => {
+  button.textContent = "Clicado!";
+});
+```
+
+⚛️ DOM e React
+
+React não manipula o DOM diretamente o tempo todo.
+
+React cria um Virtual DOM
+
+Compara mudanças (diff)
+
+Atualiza somente o necessário no DOM real
+
+👉 Entender DOM ajuda MUITO a:
+
+evitar re-render desnecessário
+
+entender performance
+
+debugar problemas estranhos
+
 
 ## 🔄 Babel
 
@@ -171,86 +256,3 @@ cd meu-projeto
 npm install
 npm run dev
 ```
-
-## 🌳 Document Object Model
-
-### ❓ O que é o DOM?
-
-**O DOM (Document Object Model) é a representação da página web em forma de árvore.**  
-Cada elemento HTML (div, button, input, etc.) vira um **nó** que pode ser acessado e manipulado pelo JavaScript.
-
-Quando você:
-
-- clica em um botão
-- digita em um input
-- abre um modal
-- atualiza um texto na tela
-
-👉 você está interagindo diretamente com o **DOM**.
-
----
-
-🎥 Vídeo recomendado
-
-🔗 [🎥 DOM e JavaScript na prática (Rocketseat)](https://www.youtube.com/watch?v=UftSB4DaRU4)
-
-Esse vídeo explica:
-
-o que é DOM
-
-como o JS interage com ele
-
-base para entender frameworks como React
-
-### 🧠 Pensando como dev Mobile (Android / iOS)
-
-Se você vem do mobile, pensa assim:
-
-| Mobile                       | Web                 |
-| ---------------------------- | ------------------- |
-| View / ViewGroup             | DOM                 |
-| ConstraintLayout / StackView | Estrutura em árvore |
-| setText(), setVisibility()   | Manipulação via JS  |
-| Re-render da View            | Atualização do DOM  |
-
-👉 A grande diferença é que na Web o DOM **fica exposto** para o JavaScript.
-
----
-
-### ⚙️ Como o JavaScript usa o DOM?
-
-O JavaScript pode:
-
-- 🔍 buscar elementos
-- ✏️ alterar texto e estilos
-- ➕ criar novos elementos
-- ❌ remover elementos
-- 🎧 escutar eventos (click, input, submit)
-
-Exemplo simples:
-
-```js
-const button = document.querySelector("button");
-
-button.addEventListener("click", () => {
-  button.textContent = "Clicado!";
-});
-```
-
-⚛️ DOM e React
-
-React não manipula o DOM diretamente o tempo todo.
-
-React cria um Virtual DOM
-
-Compara mudanças (diff)
-
-Atualiza somente o necessário no DOM real
-
-👉 Entender DOM ajuda MUITO a:
-
-evitar re-render desnecessário
-
-entender performance
-
-debugar problemas estranhos
