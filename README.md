@@ -24,7 +24,7 @@ Ele funciona como um transpilador, convertendo código JavaScript moderno (ES6+)
 
 Com Babel, você pode usar recursos avançados da linguagem sem se preocupar com o suporte dos navegadores.
 
-🔗 [Veja um vídeo explicativo sobre Babel (DevPleno)](https://www.youtube.com/watch?v=RZQMAuHE_hw)
+🔗 [Veja um vídeo explicativo sobre Babel (Código Fonte TV)](https://www.youtube.com/watch?v=RZQMAuHE_hw)
 
 ### Exemplo prático
 
