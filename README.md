@@ -111,7 +111,40 @@ Ou seja:
 - No dia a dia, você quase nunca precisa mexer na configuração do Webpack em projetos React/Next.js, mas é importante saber o que ele faz!
 
 ## Vite
-Conteúdo em breve.
+## O que é o Vite?
+**Vite é uma ferramenta de build e desenvolvimento extremamente rápida para projetos web modernos.**
+Ele utiliza o poder do ES Modules nativo do navegador para fornecer um ambiente de desenvolvimento instantâneo e builds super otimizados para produção.
+
+O Vite foi criado para ser uma alternativa mais simples e rápida ao Webpack, especialmente para projetos com frameworks como React, Vue e Svelte.
+
+🔗 [Veja um vídeo explicativo sobre Vite (Hashtag Programação)](https://www.youtube.com/watch?v=iNewmFYHjIw)
+
+### Exemplo prático
+
+Com Vite, basta rodar um comando para iniciar o projeto e ver as mudanças em tempo real, sem recarregar toda a página:
+
+```bash
+npx create-vite@latest meu-projeto --template react
+cd meu-projeto
+npm install
+npm run dev
+```
+
+O Vite serve os arquivos diretamente, aproveitando o cache do navegador e recarregando só o que mudou.
+
+---
+
+### Vite no React e Next.js
+
+O Vite se tornou o padrão para novos projetos React (substituindo o Create React App) por ser muito mais rápido e simples de configurar.
+
+- Para projetos React, basta usar o template oficial do Vite.
+- O Next.js ainda não usa Vite, pois tem seu próprio sistema de build, mas o Vite é excelente para projetos React puros e bibliotecas.
+
+Ou seja:
+
+- O Vite facilita o desenvolvimento moderno, com recarregamento instantâneo e builds rápidos.
+- É a escolha recomendada para novos projetos React que não precisam de funcionalidades avançadas do Next.js.
 
 ## Vanilla JS
 Conteúdo em breve.
