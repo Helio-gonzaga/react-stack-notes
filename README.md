@@ -70,7 +70,45 @@ Ou seja:
 
 
 ## Webpack
-Conteúdo em breve.
+## O que é o Webpack?
+**Webpack é um empacotador de módulos para aplicações JavaScript.**
+Ele pega todos os arquivos do seu projeto (JavaScript, CSS, imagens, etc.) e os transforma em um ou mais arquivos finais otimizados para o navegador.
+
+Com o Webpack, você pode usar módulos, importar arquivos e dividir seu código em partes menores (code splitting), facilitando a manutenção e melhorando a performance da aplicação.
+
+🔗 [Veja um vídeo explicativo sobre Webpack (Código Fonte TV)](https://www.youtube.com/watch?v=PcWOAYbTc9Y&t=17s)
+
+### Exemplo prático
+
+Suponha que você tenha vários arquivos JS no seu projeto:
+
+```js
+// arquivo1.js
+export function somar(a, b) {
+	return a + b;
+}
+
+// arquivo2.js
+import { somar } from './arquivo1';
+console.log(somar(2, 3));
+```
+
+O Webpack empacota tudo em um único arquivo final (ex: bundle.js), pronto para ser usado no navegador.
+
+---
+
+### Webpack no React e Next.js
+
+
+No React, o Webpack é usado para empacotar todos os arquivos do projeto, inclusive os arquivos JSX e CSS, em um bundle otimizado.
+
+- O Create React App já trazia o Webpack configurado por padrão, mas esse projeto foi descontinuado e não é mais recomendado para novos projetos.
+- O Next.js usa o Webpack internamente, mas você raramente precisa configurar manualmente.
+
+Ou seja:
+
+- O Webpack facilita o desenvolvimento moderno, permitindo importar arquivos, usar módulos e otimizar o carregamento da aplicação.
+- No dia a dia, você quase nunca precisa mexer na configuração do Webpack em projetos React/Next.js, mas é importante saber o que ele faz!
 
 ## Vite
 Conteúdo em breve.
